@@ -2,13 +2,25 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Table from './Table';
+import ComponetTable from './ComponetTbale';
 
 function App() {
+  const User =[
+    {id:5020,name:"Rinku", Email:"Rinku@gmail.com"},
+    {id:5030,name:"pankaj", Email:"pankaj@gmail.com"},
+    {id:5050,name:"Alok", Email:"alok@gmail.com"},
+    {id:5060,name:"Keyur", Email:"Keyur@gmail.com"}
+  ]
   return (
     <div>
-     <Table/>
+      {
+        User.map((items)=> <ComponetTable data={items}/>)
+
+      }
+      
     </div>
-  );
+);
 }
+  
 
 export default App;
