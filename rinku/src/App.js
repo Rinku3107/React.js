@@ -29,7 +29,7 @@ function App() {
 
 function App()
 {
-  const data= "rinku";
+  const data= " Rinku";
     
   return(
   <React.Fragment>
