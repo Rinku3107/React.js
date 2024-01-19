@@ -4,7 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Table from './Table';
 import ComponetTable from './ComponetTbale';
 import Fragment from './Fragment';
-import React from 'react';
+import React, { useState } from 'react';
+import Parent from './Parent';
+
+
 {/*
 
 function App() {
@@ -27,15 +30,32 @@ function App() {
 
 */}
 
-function App()
+{/* function App()
 {
-  const data= " Rinku";
+  const data= "rinku";
     
   return(
   <React.Fragment>
   <Fragment name={data}/>
   </React.Fragment>  
   )
-  
+} */}
+ 
+function App()
+{
+const [data,setData]= useState(" ")
+
+ const updateData=()=>{
+  setData("Rinku Nimaje");
 }
+
+  return(
+    <React.Fragment>
+          <Parent name={data} getData={updateData}/>
+    </React.Fragment>
+
+  )
+    
+}
+
 export default App;

@@ -1,5 +1,5 @@
 import React from "react";
-function Fragment(props)
+{/* function Fragment(props)
 {
     function getdata(e)
     {
@@ -15,4 +15,7 @@ function Fragment(props)
         </React.Fragment>
     )
 }
-export default Fragment;
+export default Fragment;*/}
+
+
+
