@@ -6,6 +6,8 @@ import ComponetTable from './ComponetTbale';
 import Fragment from './Fragment';
 import React, { useState } from 'react';
 import Parent from './Parent';
+import Pc from './PureComponent';
+import Memo from './UseMomo';
 
 
 {/*
@@ -40,7 +42,9 @@ function App() {
   </React.Fragment>  
   )
 } */}
- 
+{/*
+
+
 function App()
 {
 const [data,setData]= useState(" ")
@@ -58,4 +62,15 @@ const [data,setData]= useState(" ")
     
 }
 
+*/}
+function App ()
+{
+  return(
+    <div>
+    {/*<Pc/>*/}
+    
+    <Memo/>
+    </div>
+  )
+}
 export default App;
