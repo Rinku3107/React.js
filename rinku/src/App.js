@@ -8,7 +8,8 @@ import React, { useState } from 'react';
 import Parent from './Parent';
 import Pc from './PureComponent';
 import Memo from './UseMomo';
-
+import InputRef from './RefClass';
+import UseRefFun from './UseRef';
 
 {/*
 
@@ -63,13 +64,23 @@ const [data,setData]= useState(" ")
 }
 
 */}
+{/*
+
 function App ()
 {
   return(
     <div>
-    {/*<Pc/>*/}
-    
     <Memo/>
+    </div>
+  )
+}
+*/}
+function App()
+{
+  return(
+    <div>
+    <InputRef/>
+    <UseRefFun/>
     </div>
   )
 }
