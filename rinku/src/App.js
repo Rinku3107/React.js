@@ -10,6 +10,8 @@ import Pc from './PureComponent';
 import Memo from './UseMomo';
 import InputRef from './RefClass';
 import UseRefFun from './UseRef';
+import Ls from './LocalStorage';
+
 
 {/*
 
@@ -75,12 +77,22 @@ function App ()
   )
 }
 */}
-function App()
+
+
+{/*function App()
 {
   return(
     <div>
     <InputRef/>
     <UseRefFun/>
+    </div>
+  )
+}*/}
+function App()
+{
+  return(
+    <div>
+    <Ls />
     </div>
   )
 }
