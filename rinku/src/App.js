@@ -14,13 +14,10 @@ import UseRefFun from './UseRef';
 import Ls from './LocalStorage';
 */}
 
-import SesStorage from './SessionStorage';
-
 function App()
 {
   return(
     <div>
-    <Ls/>
     </div>
   )
 }
