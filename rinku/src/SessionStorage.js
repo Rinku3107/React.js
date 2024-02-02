@@ -1,16 +1,15 @@
 import  React,{ useState } from "react"
-
-const[value,setValue]=useState()
 function SesStorage()
 {
+    const [value,setValue] = useState()
     function UpdateData()
     {
-       sessionStorage.setItem("data","rinku");
+       sessionStorage.setItem('data','rinku');
     }
     return(
         <div>
-        <input type="text" value={value}></input>
-        <button onClick={UpdateData}>Click</button>
+        <h1>{value}</h1> 
+        <button onClick={UpdateData}>Set value</button>
         </div>
     )
 }

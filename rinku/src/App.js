@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-{/*
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Table from './Table';
-import ComponetTable from './ComponetTbale';
-import Fragment from './Fragment';
-import React, { useState } from 'react';
-import Parent from './Parent';
-import Pc from './PureComponent';
-import Memo from './UseMomo';
-import InputRef from './RefClass';
-import UseRefFun from './UseRef';
-import Ls from './LocalStorage';
-*/}
+import {BrowserRouter,Routes,Route} from  'react-router-dom'
+import Home from './Componets/Home';
 
-function App()
-{
-  return(
+function App() {
+  return (
     <div>
+        <BrowserRouter>
+            <Routes>
+              <Route path='Home' element={<Home/>}></Route>
+            </Routes>
+        </BrowserRouter>
     </div>
   )
 }
