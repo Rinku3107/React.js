@@ -1,2 +1,0 @@
-# React.js
-React series
