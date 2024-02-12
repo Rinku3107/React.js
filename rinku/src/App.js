@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import React from 'react';
 import {BrowserRouter,Routes,Route} from  'react-router-dom';
 import Home from './Componets/Home';
 import About from './Componets/About';
-import Navbar from './Componets/Navbar';
+import Navbar from './Componets/Navbar'
+
+
 function App() {
-  return (
+ return(
     <div className='App'>
         <BrowserRouter>
 
@@ -20,6 +21,6 @@ function App() {
             </Routes>
         </BrowserRouter>
     </div>
-  )
+ )
 }
-export default App;
+export default App
