@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter,Routes,Route} from  'react-router-dom';
-import Home from './Componets/Home';
-import About from './Componets/About';
-import Navbar from './Componets/Navbar'
+import Dhome from './DynamicRouting/Dhome';
+import Dabout from './DynamicRouting/Dabout';
+import Dnavbar from './DynamicRouting/Dnavbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
- return(
-    <div className='App'>
-        <BrowserRouter>
-        <h1>BrowserRouter</h1>
-        <br/>
-        <hr></hr>
-          <Navbar />
-          <br/>
+   return (
+      <div className='App'>
+         <BrowserRouter>
+         <Dnavbar/>
             <Routes>
-              <Route path='/Home' element={<Home/>}></Route> 
-              <Route path='/About' element={<About/>}></Route>
+               <Route path='/Dhome' element={<Dhome/>}/>
+               <Route path='/Dabout' element={<Dabout/>}/>
             </Routes>
-        </BrowserRouter>
-    </div>
- )
+         </BrowserRouter>
+      </div>
+   )
 }
 export default App
